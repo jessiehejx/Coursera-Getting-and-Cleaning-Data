@@ -4,21 +4,37 @@ Contains Human Activity Recognition database built from the recordings of 30 sub
 
 ### Variables 
 timeBodyAccelerometer-mean()-X
+
 timeBodyAccelerometer-mean()-Y
+
 timeBodyAccelerometer-mean()-Z
+
 timeBodyAccelerometer-std()-X
+
 timeBodyAccelerometer-std()-Y
+
 timeBodyAccelerometer-std()-Z
+
 timeGravityAccelerometer-mean()-X
+
 timeGravityAccelerometer-mean()-Y
+
 timeGravityAccelerometer-mean()-Z
+
 timeGravityAccelerometer-std()-X
+
 timeGravityAccelerometer-std()-Y
+
 timeGravityAccelerometer-std()-Z
+
 timeBodyAccelerometerJerk-mean()-X
+
 timeBodyAccelerometerJerk-mean()-Y
+
 timeBodyAccelerometerJerk-mean()-Z
+
 timeBodyAccelerometerJerk-std()-X
+
 timeBodyAccelerometerJerk-std()-Y
 timeBodyAccelerometerJerk-std()-Z
 timeBodyGyroscope-mean()-X
