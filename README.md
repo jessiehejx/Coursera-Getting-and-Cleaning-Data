@@ -12,14 +12,7 @@ Here are the data for the project:
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-## R script run_analysis.R
-* Merges the training and the test sets to create one data set.
-* Extracts only the measurements on the mean and standard deviation for each measurement.
-* Uses descriptive activity names to name the activities in the data set
-* Appropriately labels the data set with descriptive variable names.
-* Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-
-## R script details
+## R script run_analysis.R abstract
 ### Data Preparation: 
 * Download the data file and save it to the "Week4" (local) working directory: download.file()
 * Unzip the downloaded data file: unzip()
@@ -36,23 +29,11 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 * Subset the data frame Data by seleted names of Features
 * Check the structures of the data frame Data
 
-### Task 3 Uses descriptive activity names to name the activities in the data set:
-Data$activity[Data$activity == 1] <- "Walking"
-Data$activity[Data$activity == 2] <- "Walking Upstairs"
-Data$activity[Data$activity == 3] <- "Walking Downstairs"
-Data$activity[Data$activity == 4] <- "Sitting"
-Data$activity[Data$activity == 5] <- "Standing"
-Data$activity[Data$activity == 6] <- "Laying"
+### Task 3 Uses descriptive activity names to name the activities in the data set
 
-### Task 4 Appropriately labels the data set with descriptive variable names:
-names(Data)<-gsub("^t", "time", names(Data))
-names(Data)<-gsub("^f", "frequency", names(Data))
-names(Data)<-gsub("Acc", "Accelerometer", names(Data))
-names(Data)<-gsub("Gyro", "Gyroscope", names(Data))
-names(Data)<-gsub("Mag", "Magnitude", names(Data))
-names(Data)<-gsub("BodyBody", "Body", names(Data))
+### Task 4 Appropriately labels the data set with descriptive variable names: gsub()
 
-### Task 5 Creates a second,independent tidy data set and ouput it
-write.table(Data2, file = "tidydata.txt", sep="\t", row.name=FALSE)
+### Task 5 Creates a second,independent tidy data set and ouput it: aggregate(), write.table()
+
 
 
