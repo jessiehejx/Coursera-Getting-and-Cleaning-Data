@@ -32,10 +32,10 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 ### Task 3 Uses descriptive activity names to name the activities in the data set
 
 ### Task 4 Appropriately labels the data set with descriptive variable names: 
-gsub()
+* gsub()
 
 ### Task 5 Creates a second,independent tidy data set and ouput it: 
-aggregate(), write.table()
+* aggregate(), write.table()
 
 
 
